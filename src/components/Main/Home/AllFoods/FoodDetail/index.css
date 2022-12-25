@@ -1,0 +1,30 @@
+.food-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 200px;
+  font-family: "Poppins";
+}
+
+.food-detail__img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.food-detail__header {
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.foode-detail__rate {
+  font-size: 20px;
+}
+
+.food-detail__desc {
+  text-align: center;
+  margin: 10px 50px;
+  color: #888;
+}

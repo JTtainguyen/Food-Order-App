@@ -1,0 +1,46 @@
+.food-area__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-area__header {
+  margin-top: 30px;
+  font-family: "Poppins";
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.food-area__items {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.food-area__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-img {
+  width: 95%;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.item-img:hover {
+  transform: translateY(-5px);
+}
+
+.food-area__item > h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-bottom: 10px;
+}

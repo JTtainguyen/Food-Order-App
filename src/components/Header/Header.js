@@ -4,19 +4,23 @@ import "./index.css"
 
 export default function Header() {
   let [isLoggin, setIsLoggin] = React.useState(localStorage.getItem("isLoggin"))
+  
   let handleClick = (e) => {
     e.target.isActive = false
     localStorage.setItem("isLoggin", false)
     setIsLoggin(!isLoggin)
   }
+
   useEffect(() => {
   }, [isLoggin])
+
   return (
     <header id="header">
       <div className="navbar">
-        <NavLink className="navbar--item" to="/">Home</NavLink>
+        <NavLink className="navbar--item" to="">Home</NavLink>
         <NavLink className="navbar--item" to="/cart" >Cart</NavLink>
         <NavLink className="navbar--item" to="/payment" >Payment</NavLink>
+        <NavLink className="navbar--item" to="/addfood" >Add Food</NavLink>
         {!isLoggin ? 
           <NavLink 
             to="/signin" 
@@ -30,6 +34,7 @@ export default function Header() {
             >
               LogOut
           </NavLink>}
+
         
       </div>
     </header>

@@ -1,0 +1,19 @@
+.pay-form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  grid-template-columns: 80%;
+  margin-bottom: 30px;
+}
+
+.pay-btn__container {
+  display: flex;
+  justify-content: center;
+}
+
+.pay-btn {
+  margin: auto;
+  background-color: #6495ed;
+  color: white;
+}

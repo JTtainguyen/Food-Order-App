@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import "./index.css"
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +8,7 @@ export default function SignIn() {
   const [data, setData] = React.useState([])
   const [, setIsLoggin] = React.useState(false)
   let url = "https://63a2cab7471b38b206fc1a55.mockapi.io/users"
+  
   useEffect(() => {
     const dataFetch = async () => {
       const data = await (await fetch(url)
@@ -16,6 +17,7 @@ export default function SignIn() {
     }
     dataFetch()
   }, [url])
+
   const onFinish = (value) => {
     data.forEach(user => {
       if (value.username === user.username && value.password === user.password) {
@@ -37,7 +39,6 @@ export default function SignIn() {
         name="basic"
         labelCol={{ span: 8 }}
         wrapperCol={{ span: 8 }}
-        initialValues={{ remember: true }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
@@ -56,10 +57,6 @@ export default function SignIn() {
           rules={[{ required: true, message: 'Please input your password!' }]}
         >
           <Input.Password />
-        </Form.Item>
-
-        <Form.Item name="remember" valuePropName="checked" wrapperCol={{ offset: 8, span: 8 }}>
-          <Checkbox>Remember me</Checkbox>
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 8 }}>

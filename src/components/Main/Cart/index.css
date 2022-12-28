@@ -1,0 +1,90 @@
+.cart-container {
+  display: grid;
+  align-items: center;
+}
+
+.cart-header {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.food-item {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+  font-family: "Poppins";
+}
+
+.food-img {
+  flex: 0.3;
+  height: 200px;
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.food-name {
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.food-detail > p > button {
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.food-detail > .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-detail > p > button:hover {
+  opacity: 0.6;
+}
+
+.food-detail > p > span {
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  color: green;
+}
+
+.total {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 24px;
+}
+
+.total > span {
+  font-weight: 600;
+}
+
+.pay {
+  font-size: 20px;
+  background-color: #6495ed;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  margin: 30px  auto;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.pay:hover {
+  opacity: 0.8;
+}

@@ -28,7 +28,9 @@ export default function FoodItem(props) {
       id : props.food.id
     }
     let newCart = [...cart, cartFood]
+    total += props.food.price
     localStorage.setItem("cart", JSON.stringify(newCart))
+    localStorage.setItem("total", total)
     nav("/payment")
   }
 

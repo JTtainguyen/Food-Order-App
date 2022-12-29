@@ -6,7 +6,7 @@ export default function AllFoods() {
   let url = "https://63a2cab7471b38b206fc1a55.mockapi.io/foods"
   const [data, setData] = React.useState([])
   let [cart, setCart] = React.useState(JSON.parse(localStorage.getItem("cart")) || [])
-  let currentArea = localStorage.getItem("currentArea")
+  let currentArea = localStorage.getItem("currentArea") || ""
   
   useEffect(() => {
     const dataFetch = async () => {
